@@ -15,6 +15,22 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script>
+		var i = 0;
+		var txt = ' Competitive Programmer';
+		var speed = 200;
+		var tim= 4000;
+		function typeWriter() {
+		  if(i==0){
+		  	setTimeout(typeWriter,tim);
+		  }
+		  if (i < txt.length) {
+		    document.getElementById("demo").innerHTML += txt.charAt(i);
+		    i++;
+		    setTimeout(typeWriter, speed);
+		  }
+		}
+		</script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -23,7 +39,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="landing">
+	<body class="landing" onload="typeWriter()">
 
 		<!-- Header -->
 			<header id="header" class="alt skel-layers-fixed">
@@ -48,7 +64,7 @@
 			<section id="banner">
 				<div class="inner">
 					<h2>Himanshu Khandelwal</h2>
-					<p class="icon fa-code"> Competitive Programmer</p>
+					<p id="demo" class="icon fa-code"></p>
 				</div>
 			</section>
 

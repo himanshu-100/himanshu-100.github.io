@@ -1242,11 +1242,11 @@
 	}
 
 		#banner:after {
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-o-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1.5s ease-in-out;
+			-moz-transition: opacity 4s ease-in-out;
+			-webkit-transition: opacity 4s ease-in-out;
+			-o-transition: opacity 4s ease-in-out;
+			-ms-transition: opacity 4s ease-in-out;
+			transition: opacity 4s ease-in-out;
 			background: #1d4045;
 			content: '';
 			height: 100%;
