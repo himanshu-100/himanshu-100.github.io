@@ -17,12 +17,13 @@
 		<script>
 		var i = 0;
 		var txt = ' Competitive Programmer';
-		var speed = 200;
+		var speed = 1000;
 		function typeWriter() {
 		  if (i < txt.length) {
 		    document.getElementById("demo").innerHTML += txt.charAt(i);
 		    i++;
 		    setTimeout(typeWriter, speed);
+		    speed=speed/1.1;
 		  }
 		}
 		</script>
@@ -146,7 +147,7 @@
 			<footer id="footer">
 				<ul class="icons">
 					<li><a href="https://www.facebook.com/himkha.100" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com/himanchuuuu/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.instagram.com/himkha_100/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://github.com/himanshu-100" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="https://www.linkedin.com/in/himanshu-khandelwal-1b7517135/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://plus.google.com/u/2/116025503188800977004" class="icon fa-google-plus"><span class="label">G+</span></a></li>
